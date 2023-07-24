@@ -81,7 +81,7 @@ const NavBar = () => {
             <div className="justify-end hidden pr-16 sm:flex lg:pr-0">
   {user?.email ? (
     <div className="w-10 rounded-full group-item hover:bg-slate-100">
-      <img src={user?.photoURL} alt="User Profile" className="w-10 rounded-full group-item hover:bg-slate-100"/>
+      <Link to='/profile'> <img src={user?.photoURL} alt="User Profile" className="w-10 rounded-full group-item hover:bg-slate-100"/></Link>
       <button onClick={handleLogOut} className="py-3 text-base font-medium text-white rounded-lg bg-primary px-7 hover:bg-opacity-90">Logout</button>
     </div>
   ) : (

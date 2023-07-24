@@ -1,6 +1,7 @@
 
 import CollegeData from "./CollegeData";
 import ImgGallery from "./ImgGallery/ImgGallery";
+import Review from "./Review/Review";
 
 
 
@@ -17,6 +18,7 @@ const Home = () => {
            <div>
            <ImgGallery></ImgGallery>
            </div>
+           <Review></Review>
         </div>
     );
 };
