@@ -5,6 +5,9 @@ import Main from "../Layout/Main";
 import Home from "../Pages/Home/Home/Home";
 import Details from "../Pages/Details/Details";
 import Admission from "../Pages/Admission/Admission";
+import Login from "../Pages/Login/Login";
+import SignUp from "../Pages/SignUp/SignUp";
+import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 
 
   export const router = createBrowserRouter([
@@ -23,7 +26,19 @@ import Admission from "../Pages/Admission/Admission";
         {
           path: 'admission',
           element: <Admission></Admission>
+        },
+        {
+          path: 'login',
+          element: <Login></Login>
+        },
+        {
+          path: 'signup',
+          element: <SignUp></SignUp>
         }
       ]
     },
+    {
+      path: '*',
+      element: <ErrorPage></ErrorPage>
+    }
   ]);
